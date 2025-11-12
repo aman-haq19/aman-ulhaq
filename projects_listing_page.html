@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Aman Ul Haq - Projects</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#f2b90d",
+            "background-light": "#f8f8f5",
+            "background-dark": "#221e10",
+          },
+          fontFamily: {
+            "display": ["Space Grotesk", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .glassmorphism-card {
+      background: rgba(255, 255, 255, 0.05);
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .light .glassmorphism-card {
+      background: rgba(248, 248, 245, 0.5);
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(34, 30, 16, 0.1);
+    }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-40 flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col w-full max-w-6xl flex-1">
+<!-- TopNavBar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-black/10 dark:border-white/10 px-4 md:px-10 py-3">
+<div class="flex items-center gap-4">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.8261 17.4264C16.7203 18.1174 20.2244 18.5217 24 18.5217C27.7756 18.5217 31.2797 18.1174 34.1739 17.4264C36.9144 16.7722 39.9967 15.2331 41.3563 14.1648L24.8486 40.6391C24.4571 41.267 23.5429 41.267 23.1514 40.6391L6.64374 14.1648C8.00331 15.2331 11.0856 16.7722 13.8261 17.4264Z" fill="currentColor"></path>
+<path clip-rule="evenodd" d="M39.998 12.236C39.9944 12.2537 39.9875 12.2845 39.9748 12.3294C39.9436 12.4399 39.8949 12.5741 39.8346 12.7175C39.8168 12.7597 39.7989 12.8007 39.7813 12.8398C38.5103 13.7113 35.9788 14.9393 33.7095 15.4811C30.9875 16.131 27.6413 16.5217 24 16.5217C20.3587 16.5217 17.0125 16.131 14.2905 15.4811C12.0012 14.9346 9.44505 13.6897 8.18538 12.8168C8.17384 12.7925 8.16216 12.767 8.15052 12.7408C8.09919 12.6249 8.05721 12.5114 8.02977 12.411C8.00356 12.3152 8.00039 12.2667 8.00004 12.2612C8.00004 12.261 8 12.2607 8.00004 12.2612C8.00004 12.2359 8.0104 11.9233 8.68485 11.3686C9.34546 10.8254 10.4222 10.2469 11.9291 9.72276C14.9242 8.68098 19.1919 8 24 8C28.8081 8 33.0758 8.68098 36.0709 9.72276C37.5778 10.2469 38.6545 10.8254 39.3151 11.3686C39.9006 11.8501 39.9857 12.1489 39.998 12.236ZM4.95178 15.2312L21.4543 41.6973C22.6288 43.5809 25.3712 43.5809 26.5457 41.6973L43.0534 15.223C43.0709 15.1948 43.0878 15.1662 43.104 15.1371L41.3563 14.1648C43.104 15.1371 43.1038 15.1374 43.104 15.1371L43.1051 15.135L43.1065 15.1325L43.1101 15.1261L43.1199 15.1082C43.1276 15.094 43.1377 15.0754 43.1497 15.0527C43.1738 15.0075 43.2062 14.9455 43.244 14.8701C43.319 14.7208 43.4196 14.511 43.5217 14.2683C43.6901 13.8679 44 13.0689 44 12.2609C44 10.5573 43.003 9.22254 41.8558 8.2791C40.6947 7.32427 39.1354 6.55361 37.385 5.94477C33.8654 4.72057 29.133 4 24 4C18.867 4 14.1346 4.72057 10.615 5.94478C8.86463 6.55361 7.30529 7.32428 6.14419 8.27911C4.99695 9.22255 3.99999 10.5573 3.99999 12.2609C3.99999 13.1275 4.29264 13.9078 4.49321 14.3607C4.60375 14.6102 4.71348 14.8196 4.79687 14.9689C4.83898 15.0444 4.87547 15.1065 4.9035 15.1529C4.91754 15.1762 4.92954 15.1957 4.93916 15.2111L4.94662 15.223L4.95178 15.2312ZM35.9868 18.996L24 38.22L12.0131 18.996C12.4661 19.1391 12.9179 19.2658 13.3617 19.3718C16.4281 20.1039 20.0901 20.5217 24 20.5217C27.9099 20.5217 31.5719 20.1039 34.6383 19.3718C35.082 19.2658 35.5339 19.1391 35.9868 18.996Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-gray-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">Aman Ul Haq</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end items-center gap-8">
+<div class="flex items-center gap-9">
+<a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal transition-colors" href="#">Home</a>
+<a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal transition-colors" href="#">About</a>
+<a class="text-primary dark:text-primary text-sm font-bold leading-normal" href="#">Projects</a>
+<a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal transition-colors" href="#">Contact</a>
+</div>
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 w-10 bg-black/5 dark:bg-white/10 text-gray-800 dark:text-white hover:bg-black/10 dark:hover:bg-white/20 transition-colors">
+<span class="material-symbols-outlined text-xl dark:hidden">dark_mode</span>
+<span class="material-symbols-outlined text-xl hidden dark:inline">light_mode</span>
+</button>
+</div>
+<div class="md:hidden">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 w-10 bg-black/5 dark:bg-white/10 text-gray-800 dark:text-white hover:bg-black/10 dark:hover:bg-white/20 transition-colors">
+<span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+</div>
+</header>
+<main class="flex-grow">
+<!-- PageHeading -->
+<div class="flex flex-wrap justify-between gap-3 p-4 py-16 text-center">
+<div class="flex w-full flex-col items-center gap-4">
+<h1 class="text-gray-900 dark:text-white text-4xl sm:text-5xl md:text-6xl font-black leading-tight tracking-[-0.033em]">Selected Work</h1>
+<p class="text-gray-600 dark:text-gray-400 text-base md:text-lg font-normal leading-normal max-w-2xl">A collection of my work in AI, Computer Vision, and real-world problem-solving, showcasing innovative solutions and technical expertise.</p>
+</div>
+</div>
+<!-- ImageGrid / Project Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 p-4">
+<!-- Project Card 1 -->
+<div class="flex flex-col gap-4 rounded-xl glassmorphism-card overflow-hidden transition-transform duration-300 hover:-translate-y-2 group">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" data-alt="Abstract visualization of a neural network" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCUGjOidko4huhVMCtWqlEjx9Q6v0XFNf_n7HazWOp_0AMKOJxiM-H0Kw3REtlq-8f9UUb8WYVt-4oy9PmLIv1VrAgdsblIkly1CnZJEQ9QjX_PSltR881FvU2vGYk0NCKPX9wsZ7YeN9snuMK6FQxeI7ID5bzhZLi7zk-a3wrwv79QMcLg1svRHfqjGbIM1qHTU8bKe_SMGrgf34utsmoOyLbBwex9TkzpW1QVlcH7ZZ3BEO8x6DQ9xmGFIWaeIh7STC1Xl_1YNIcD");'></div>
+<div class="p-5 pt-0 flex flex-col flex-grow">
+<h3 class="text-gray-900 dark:text-white text-lg font-bold leading-normal">Real-Time Object Detection</h3>
+<p class="text-gray-600 dark:text-gray-400 text-sm font-normal leading-normal mt-1 mb-4 flex-grow">YOLOv5 implementation for autonomous retail checkout systems.</p>
+<a class="inline-block mt-auto text-center w-full px-6 py-2.5 rounded-lg bg-primary text-background-dark font-bold text-sm transition-all duration-300 hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background-light dark:focus:ring-offset-background-dark" href="#">View Details</a>
+</div>
+</div>
+<!-- Project Card 2 -->
+<div class="flex flex-col gap-4 rounded-xl glassmorphism-card overflow-hidden transition-transform duration-300 hover:-translate-y-2 group">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" data-alt="Dashboard with complex charts and graphs" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAScC8w8waLCLT2vEol_gfQM2deA8DJAyjp0tgpfsTnlWftuGMsvMIoNJZpqxUSUt0Zm4guOHhVMytSCqLFj3VjId9nMWfVdOm68tCBLzlzxljiTa3TX9ffZZd9XmMzOACZyisdPgxldH-GUHUIBMKnhfJE28Fp4Vri8PDi3FYzSml8Mjek_CLHId1aKI8P1A6FMFg6pWSj05PLirzv8ulyUBYNAmK2L6AYa4tyq-l93ATrqNmpqiCDd7_1oUeZt6abtubBEofU3gYQ");'></div>
+<div class="p-5 pt-0 flex flex-col flex-grow">
+<h3 class="text-gray-900 dark:text-white text-lg font-bold leading-normal">Predictive Analytics Dashboard</h3>
+<p class="text-gray-600 dark:text-gray-400 text-sm font-normal leading-normal mt-1 mb-4 flex-grow">Forecasting sales trends with time-series analysis and data visualization.</p>
+<a class="inline-block mt-auto text-center w-full px-6 py-2.5 rounded-lg bg-primary text-background-dark font-bold text-sm transition-all duration-300 hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background-light dark:focus:ring-offset-background-dark" href="#">View Details</a>
+</div>
+</div>
+<!-- Project Card 3 -->
+<div class="flex flex-col gap-4 rounded-xl glassmorphism-card overflow-hidden transition-transform duration-300 hover:-translate-y-2 group">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" data-alt="Artistic representation of natural language processing" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDxpX0tQ7Z-eKcMcasrsgqNbuYMk7yusYjUQrflpcANPckW8qA1nubvhHDl6BgiUHcbFpMUT6j8-zGsevgk0uEzrYANamjVwu5CZMLQn9tItps9HnJFRCbowFE9npCbwwPz46x74zblWDEko9q3YHQmRzahjY86DFgXpkIgXXU1Fk7fE9Da1GDv_2nXZ_5qe-nr3yX9K5UegIJi4vt-GluwWy9aDNmFNtmjmqqyNsfRBTHVr9A4txecZ_by3C1DPbU3Q9HnBGnmb3rU");'></div>
+<div class="p-5 pt-0 flex flex-col flex-grow">
+<h3 class="text-gray-900 dark:text-white text-lg font-bold leading-normal">Sentiment Analysis Engine</h3>
+<p class="text-gray-600 dark:text-gray-400 text-sm font-normal leading-normal mt-1 mb-4 flex-grow">Processing customer feedback using advanced NLP and machine learning models.</p>
+<a class="inline-block mt-auto text-center w-full px-6 py-2.5 rounded-lg bg-primary text-background-dark font-bold text-sm transition-all duration-300 hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background-light dark:focus:ring-offset-background-dark" href="#">View Details</a>
+</div>
+</div>
+<!-- Project Card 4 -->
+<div class="flex flex-col gap-4 rounded-xl glassmorphism-card overflow-hidden transition-transform duration-300 hover:-translate-y-2 group">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" data-alt="Futuristic facial recognition interface" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA-HaLxxV_7SN2WQc5K-i18aJ9RFA2-_n-wucBMNsVFhux96l6ZOUXWjk73saPZA2kHx5HCCN4YKjsKHWo0vA7MjGTfhT3_mlMn5oNhuz6hAoIugxuykz6vgrutel1AHLeMkFP0HVNJvkPY42Vex7wD30WeKfxS-L08NFKeOh8MUSO8woSew6A_bhBjGrZJH_eIfM8C5UUGMb7Y84iOpngLClx9YU6VrpvRMkzdYoy8NUT3EHcwEwFn9reItMKuL6cdX5bY9o1lf8GM");'></div>
+<div class="p-5 pt-0 flex flex-col flex-grow">
+<h3 class="text-gray-900 dark:text-white text-lg font-bold leading-normal">Facial Recognition Security</h3>
+<p class="text-gray-600 dark:text-gray-400 text-sm font-normal leading-normal mt-1 mb-4 flex-grow">Secure access control system powered by deep learning models for high accuracy.</p>
+<a class="inline-block mt-auto text-center w-full px-6 py-2.5 rounded-lg bg-primary text-background-dark font-bold text-sm transition-all duration-300 hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background-light dark:focus:ring-offset-background-dark" href="#">View Details</a>
+</div>
+</div>
+<!-- Project Card 5 -->
+<div class="flex flex-col gap-4 rounded-xl glassmorphism-card overflow-hidden transition-transform duration-300 hover:-translate-y-2 group">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" data-alt="Network diagram showing connections between users" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCcMrbUlGn8VPJ1UUZBJzuY-cnCFp6SzNVcSYqVB4dSQJjcqHunPF1WojLJe449dnY91A0yfFU_CLSqSlTU6vksUC4PfSga4q1cjVboELumCRYS9tNE8LTHg6zwnF7KDm6U1dCR6HRSnFwOmjFsdbjlqkVGUeTxd8Aan1r5d1sMR6gBU-SeCZQDZGvJHpoEwBJprvwT9wqKW7NarrPl4I_AoF5WKSmFOy7nShMoXIIKsDtcYCa8FvSFshVyhvU1vZuny_NV-w_WDfDI");'></div>
+<div class="p-5 pt-0 flex flex-col flex-grow">
+<h3 class="text-gray-900 dark:text-white text-lg font-bold leading-normal">E-commerce Recommendation Engine</h3>
+<p class="text-gray-600 dark:text-gray-400 text-sm font-normal leading-normal mt-1 mb-4 flex-grow">Personalizing user experience with collaborative filtering and matrix factorization.</p>
+<a class="inline-block mt-auto text-center w-full px-6 py-2.5 rounded-lg bg-primary text-background-dark font-bold text-sm transition-all duration-300 hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background-light dark:focus:ring-offset-background-dark" href="#">View Details</a>
+</div>
+</div>
+<!-- Project Card 6 -->
+<div class="flex flex-col gap-4 rounded-xl glassmorphism-card overflow-hidden transition-transform duration-300 hover:-translate-y-2 group">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" data-alt="A drone flying over a complex terrain" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBc2Gdt5VhnxQEQvdWU8EpCHGXzYMQtvIBjv6b0hmg_DZOAeBX4yvL5visf1wmCDk6OCJdLrMplFLKDYZLsDp6Ag57F5Pb23b_9O7MHIh8XvoPVdeKnegv6vEdKa3RtYEZpkzJOMyOeCWql3shPdQBQyfQ_6NWcwaT8go5ObRaOiicMTj9QSloXqYOcsVvsHIxl02SEQEhhKOejhzynfIDc8pCMorZ-P6kwH-8Ai8803SLmwGpsaprzzzpbKMQ_fVlSmXzbu7ehujvg");'></div>
+<div class="p-5 pt-0 flex flex-col flex-grow">
+<h3 class="text-gray-900 dark:text-white text-lg font-bold leading-normal">Autonomous Drone Navigation</h3>
+<p class="text-gray-600 dark:text-gray-400 text-sm font-normal leading-normal mt-1 mb-4 flex-grow">Using computer vision for obstacle avoidance, pathfinding, and autonomous flight.</p>
+<a class="inline-block mt-auto text-center w-full px-6 py-2.5 rounded-lg bg-primary text-background-dark font-bold text-sm transition-all duration-300 hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background-light dark:focus:ring-offset-background-dark" href="#">View Details</a>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="flex flex-col gap-8 px-5 py-16 mt-20 text-center border-t border-black/10 dark:border-white/10">
+<div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-4 md:justify-around">
+<a class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary text-base font-normal leading-normal min-w-40 transition-colors" href="#">Home</a>
+<a class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary text-base font-normal leading-normal min-w-40 transition-colors" href="#">About</a>
+<a class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary text-base font-normal leading-normal min-w-40 transition-colors" href="#">Projects</a>
+<a class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary text-base font-normal leading-normal min-w-40 transition-colors" href="#">Contact</a>
+</div>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24">
+<path clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.286 2.866 7.91 6.794 9.172.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.378.203 2.398.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.338 4.695-4.566 4.942.359.308.678.92.678 1.852 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z" fill-rule="evenodd"></path>
+</svg>
+</a>
+<a class="text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24">
+<path d="M22.23 5.48a.95.95 0 00-.68-.28h-2.1a9.33 9.33 0 00-8.9 9.33v.06h.05a.95.95 0 00.95-.95V8.69a.95.95 0 01.95-.95h3.01a.95.95 0 01.95.95v8.13a.95.95 0 00.95.95h2.11a.95.95 0 00.95-.95v-5.2a3.8 3.8 0 00-3.8-3.8V5.48zM4.77 5.2h2.1a.95.95 0 01.95.95v10.73a.95.95 0 01-.95.95h-2.1a.95.95 0 01-.95-.95V6.15a.95.95 0 01.95-.95zm.04-2.1a2.1 2.1 0 11-2.1 2.1 2.1 2.1 0 012.1-2.1z"></path>
+</svg>
+</a>
+<a class="text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24">
+<path d="M22.46 6c-.77.35-1.6.58-2.46.67.88-.53 1.56-1.37 1.88-2.38-.83.49-1.74.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.22-1.95-.54v.05c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.95.07c.54 1.7 2.1 2.95 3.95 3-.98.76-2.23 1.22-3.59 1.22-.23 0-.46-.01-.68-.04 1.27.81 2.79 1.29 4.4 1.29 5.28 0 8.18-4.39 8.18-8.18 0-.12 0-.25-.01-.37.56-.4.98-1 1.36-1.61z"></path>
+</svg>
+</a>
+</div>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">© 2024 Aman Ul Haq. All Rights Reserved.</p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+</body></html>

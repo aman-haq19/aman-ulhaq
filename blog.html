@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Aman Ul Haq - AI &amp; ML Insights</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#135bec",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .glassmorphism {
+            background: rgba(255, 255, 255, 0.05);
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .dark .glassmorphism {
+             background: rgba(16, 22, 34, 0.5); /* background-dark with opacity */
+        }
+        .light .glassmorphism {
+            background: rgba(246, 246, 248, 0.7); /* background-light with opacity */
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-gray-800 dark:text-gray-200">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-40 flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<!-- TopNavBar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200 dark:border-b-[#282e39] px-4 sm:px-10 py-3">
+<div class="flex items-center gap-4">
+<div class="size-6 text-primary">
+<svg fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2zm0 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm-1 4v2h2V8h-2zm0 4v6h2v-6h-2z"></path></svg>
+</div>
+<h2 class="text-gray-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">Aman Ul Haq</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-gray-600 dark:text-white text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-gray-600 dark:text-white text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary transition-colors" href="#">About</a>
+<a class="text-gray-600 dark:text-white text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary transition-colors" href="#">Projects</a>
+<a class="text-primary text-sm font-bold leading-normal" href="#">Insights</a>
+</div>
+<div class="flex gap-2">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 w-10 bg-gray-200 dark:bg-[#282e39] text-gray-800 dark:text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
+<span class="material-symbols-outlined">dark_mode</span>
+</button>
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 w-10 bg-gray-200 dark:bg-[#282e39] text-gray-800 dark:text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
+<span class="material-symbols-outlined">code</span>
+</button>
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 w-10 bg-gray-200 dark:bg-[#282e39] text-gray-800 dark:text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
+<svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+</button>
+</div>
+</div>
+<div class="md:hidden">
+<button class="flex items-center justify-center rounded-lg h-10 w-10 bg-gray-200 dark:bg-[#282e39] text-gray-800 dark:text-white">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<!-- HeroSection -->
+<div class="py-16 md:py-24 text-center">
+<div class="flex flex-col gap-4">
+<h1 class="text-gray-900 dark:text-white text-4xl sm:text-5xl font-black leading-tight tracking-[-0.033em]">Exploring the Frontiers of AI &amp; Machine Learning</h1>
+<p class="text-gray-600 dark:text-[#9da6b9] text-base sm:text-lg font-normal leading-normal max-w-3xl mx-auto">Sharing knowledge on computer vision, large language models, and practical AI solutions from real-world projects.</p>
+</div>
+</div>
+<!-- Chips/Filters -->
+<div class="flex gap-3 p-3 flex-wrap justify-center">
+<div class="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-primary pl-4 pr-4">
+<p class="text-white text-sm font-medium leading-normal">All</p>
+</div>
+<div class="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-gray-200 dark:bg-[#282e39] pl-4 pr-4 hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">
+<p class="text-gray-800 dark:text-white text-sm font-medium leading-normal">AI</p>
+</div>
+<div class="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-gray-200 dark:bg-[#282e39] pl-4 pr-4 hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">
+<p class="text-gray-800 dark:text-white text-sm font-medium leading-normal">Machine Learning</p>
+</div>
+<div class="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-gray-200 dark:bg-[#282e39] pl-4 pr-4 hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">
+<p class="text-gray-800 dark:text-white text-sm font-medium leading-normal">Computer Vision</p>
+</div>
+<div class="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-gray-200 dark:bg-[#282e39] pl-4 pr-4 hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">
+<p class="text-gray-800 dark:text-white text-sm font-medium leading-normal">Tutorials</p>
+</div>
+<div class="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-gray-200 dark:bg-[#282e39] pl-4 pr-4 hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">
+<p class="text-gray-800 dark:text-white text-sm font-medium leading-normal">Case Studies</p>
+</div>
+</div>
+<!-- Blog Post Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
+<!-- Card 1 -->
+<div class="group flex flex-col gap-4 p-4 rounded-xl glassmorphism transition-transform duration-300 hover:-translate-y-1">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg" data-alt="Abstract visualization of a neural network" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAEabinYVDSx1ptUMYnu5X3H5sU-A8c3OwKxTS6g3sQT12uziT8zveV1rwaqgE1JmP5N5BxTkgcCcppYevtbsML4ei4IP2EZDsdggYvsNbWxRafhwaincyMJJGCOSQOqAH5wD0dpQqzhc7nr0L11O-RGA_d4vgEoVravOVa4IJ-kx-ntoIzYRg4klgUUnLrFkgH7rqBfKCn2ORyxvFo5Fz9_YX1YXtmtxzT3cHJgVUFABbmd9EiIapFy9xSqbFqKilB1O1GBoxr1JN_");'></div>
+<div class="flex flex-col gap-2">
+<p class="text-primary text-xs font-bold uppercase">Computer Vision</p>
+<h3 class="text-gray-900 dark:text-white text-lg font-bold leading-tight">Building a Real-Time Object Detection Model with YOLOv8</h3>
+<p class="text-gray-600 dark:text-[#9da6b9] text-sm font-normal leading-normal">A step-by-step guide to creating a high-performance object detection system.</p>
+</div>
+<div class="flex-grow"></div>
+<div class="flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
+<span>Oct 12, 2023 · 10 min read</span>
+<a class="flex items-center gap-1 font-bold text-primary opacity-0 group-hover:opacity-100 transition-opacity" href="#">
+                                    Read More
+                                    <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group flex flex-col gap-4 p-4 rounded-xl glassmorphism transition-transform duration-300 hover:-translate-y-1">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg" data-alt="Lines of code on a dark screen" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD08IhM2FfG-DE_kbcOseh_QRoKtakySiebrT7fgofAh3FRLAbwfqe2-7hnsb064QWMmOkZcuxXfJaKZ83fw1Y4Ww48rLuIil-IUgi6pBfjP6EqobwvD5_V1CqWqaat1Elcfk3hAh6x6vPYSLnKonn7fsdoHQWngzeeSrb_CoP_LY8uhaV2N2vPtWWwSFLqgyrW16W74dQ2RfnitWmy5BknozfW8HNgXptlydmERwAYcnG88gcBxa8hP31Ra3X-SI8fWdxZr2YWF-_-");'></div>
+<div class="flex flex-col gap-2">
+<p class="text-primary text-xs font-bold uppercase">Machine Learning</p>
+<h3 class="text-gray-900 dark:text-white text-lg font-bold leading-tight">Fine-Tuning a Language Model for Code Generation</h3>
+<p class="text-gray-600 dark:text-[#9da6b9] text-sm font-normal leading-normal">Learn how to customize large language models for specific coding tasks and domains.</p>
+</div>
+<div class="flex-grow"></div>
+<div class="flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
+<span>Sep 28, 2023 · 8 min read</span>
+<a class="flex items-center gap-1 font-bold text-primary opacity-0 group-hover:opacity-100 transition-opacity" href="#">
+                                    Read More
+                                    <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group flex flex-col gap-4 p-4 rounded-xl glassmorphism transition-transform duration-300 hover:-translate-y-1">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg" data-alt="Cloud server room with glowing lights" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD-uR6-xG9Utv_gXNQ_ujslhBq8wfSvDjzdD3TsPDNcD6Dz0wyWcFlJKFXASQIMLarblSfjNhychUa8orXCFYvRsTr61uR3F4Aw5Q-mqzzQIhQYO4boQtCPJjqNKqZB0-uc324ST2o1eqdA6u6oW9KtYeuyljEHjtS7SFjQUpTTLJfbaCRnWTuB7SSEjjHu1WfqjZOmXuGHCsLTxAwhm7s5Cu185pZTnnhuOwYCJEDjZ7aPgmyfSA0CWb1d7Uiin4q1sp7EkzrhK8Ok");'></div>
+<div class="flex flex-col gap-2">
+<p class="text-primary text-xs font-bold uppercase">MLOps</p>
+<h3 class="text-gray-900 dark:text-white text-lg font-bold leading-tight">The Practical Challenges of Deploying ML in Production</h3>
+<p class="text-gray-600 dark:text-[#9da6b9] text-sm font-normal leading-normal">Exploring common pitfalls and best practices for MLOps and model deployment.</p>
+</div>
+<div class="flex-grow"></div>
+<div class="flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
+<span>Sep 15, 2023 · 12 min read</span>
+<a class="flex items-center gap-1 font-bold text-primary opacity-0 group-hover:opacity-100 transition-opacity" href="#">
+                                    Read More
+                                    <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="group flex flex-col gap-4 p-4 rounded-xl glassmorphism transition-transform duration-300 hover:-translate-y-1">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg" data-alt="Abstract art with two opposing color fields" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBoCAasWyhyZkYxsr-pZdxU4f4OmJrLGKvGLdTVYYJAphw0MjJjQkiKif9TpLxmZlmrekpRsKEP39ZZP9yRNtNDsajUYNDyBqHubxJkls0OIVLOwnOHi-_UyfPqfa-lg5l1ImTuGxaiVj7hj9cen02CKcBc8a8BHfdc9whWURsCgntyCXqMA2-laI7AcU1-SJLksXanQjbGNsN3I256DNQLFtSusvVG2pw0Oke2yeBb8zCyj3_zcbLpRBghZ9WgyCkBDfBR3hXC4R2_");'></div>
+<div class="flex flex-col gap-2">
+<p class="text-primary text-xs font-bold uppercase">AI</p>
+<h3 class="text-gray-900 dark:text-white text-lg font-bold leading-tight">An Introduction to Generative Adversarial Networks</h3>
+<p class="text-gray-600 dark:text-[#9da6b9] text-sm font-normal leading-normal">Dive into the core concepts behind GANs and their applications in creating synthetic data.</p>
+</div>
+<div class="flex-grow"></div>
+<div class="flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
+<span>Aug 30, 2023 · 9 min read</span>
+<a class="flex items-center gap-1 font-bold text-primary opacity-0 group-hover:opacity-100 transition-opacity" href="#">
+                                    Read More
+                                    <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="group flex flex-col gap-4 p-4 rounded-xl glassmorphism transition-transform duration-300 hover:-translate-y-1">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg" data-alt="A glowing brain made of connected nodes" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAEj7iRcQ9Y9ZbQ8JYgD-lqjbk-bae5-Eu0AR92tPfmYHA8Dds1LF4y2yPRbyzpbJQPsbbTIlbtei2pgdUw7JAd42uqr5bqPBrMU0ZtOhLXOiwS1vLVhebc8N8EGwHEpTZPLizXZWuVtYRtBd3xaw028X6Uht_OxvQDgdBY4oB7dQg0sseGaMREJyDBvcYTN4e2NSc6Ff258bBkyEKxYNvkn0-k2J-3NiwA9QhUd5iIwOCaLNy7vnjmxBeZJdaybcNma8ZTfdDevfjl");'></div>
+<div class="flex flex-col gap-2">
+<p class="text-primary text-xs font-bold uppercase">NLP</p>
+<h3 class="text-gray-900 dark:text-white text-lg font-bold leading-tight">Understanding Transformer Architectures in NLP</h3>
+<p class="text-gray-600 dark:text-[#9da6b9] text-sm font-normal leading-normal">A deep dive into the attention mechanism that powers models like GPT and BERT.</p>
+</div>
+<div class="flex-grow"></div>
+<div class="flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
+<span>Aug 11, 2023 · 11 min read</span>
+<a class="flex items-center gap-1 font-bold text-primary opacity-0 group-hover:opacity-100 transition-opacity" href="#">
+                                    Read More
+                                    <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 6 -->
+<div class="group flex flex-col gap-4 p-4 rounded-xl glassmorphism transition-transform duration-300 hover:-translate-y-1">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg" data-alt="A self-driving car's view of a city street" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAl9ILUpS1XLAfrgO1q46iAyx_IURkIQeYyccMAUwNx6XcSbnCLJpDUTy_HFGZ5jEHx_YkHr1oSo9doh8x9gOFhezQBgRgCTLA8xwsqjhaR5h4tmVbGWN8SNj9B-VPjUFhJ0J3w0Puys0OPhtI4tjNJhWgWBvOdKxKlu_KYKaXVWc_bMKP4JRpVzQHNcFgbKSTNxoxjyDF5Wsfd6WcwetXm1RP-6wgcUolAcuHyZ9QfmONAUqRXkKOGNereo3jljbfCNTEia9i1VkBY");'></div>
+<div class="flex flex-col gap-2">
+<p class="text-primary text-xs font-bold uppercase">Case Studies</p>
+<h3 class="text-gray-900 dark:text-white text-lg font-bold leading-tight">Computer Vision for Autonomous Vehicles</h3>
+<p class="text-gray-600 dark:text-[#9da6b9] text-sm font-normal leading-normal">An overview of how CV is enabling the next generation of self-driving cars.</p>
+</div>
+<div class="flex-grow"></div>
+<div class="flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
+<span>Jul 25, 2023 · 7 min read</span>
+<a class="flex items-center gap-1 font-bold text-primary opacity-0 group-hover:opacity-100 transition-opacity" href="#">
+                                    Read More
+                                    <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Pagination -->
+<div class="flex justify-center items-center gap-2 p-8">
+<button class="flex items-center justify-center rounded-lg h-10 w-10 bg-gray-200 dark:bg-[#282e39] text-gray-800 dark:text-white disabled:opacity-50" disabled="">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="flex items-center justify-center rounded-lg h-10 w-10 bg-primary text-white font-bold">1</button>
+<button class="flex items-center justify-center rounded-lg h-10 w-10 bg-gray-200 dark:bg-[#282e39] text-gray-800 dark:text-white">2</button>
+<button class="flex items-center justify-center rounded-lg h-10 w-10 bg-gray-200 dark:bg-[#282e39] text-gray-800 dark:text-white">3</button>
+<button class="flex items-center justify-center rounded-lg h-10 w-10 bg-gray-200 dark:bg-[#282e39] text-gray-800 dark:text-white">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+<!-- Footer -->
+<footer class="mt-16 py-8 border-t border-gray-200 dark:border-b-[#282e39]">
+<div class="text-center text-sm text-gray-500 dark:text-gray-400">
+<p>© 2024 Aman Ul Haq. All Rights Reserved.</p>
+<p class="mt-1">Designed for Aivora Solutions</p>
+</div>
+</footer>
+</div>
+</div>
+</div>
+</div>
+</body></html>

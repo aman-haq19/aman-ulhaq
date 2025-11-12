@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Our Team - Aivora Solutions</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        .glassmorphism-light {
+            background-color: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .glassmorphism-dark {
+            background-color: rgba(20, 25, 35, 0.5);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#137fec",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101922",
+            },
+            fontFamily: {
+              "display": ["Space Grotesk", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 sm:px-10 md:px-20 lg:px-40 flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<!-- TopNavBar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200 dark:border-b-[#283039] px-4 sm:px-10 py-3 mb-8">
+<div class="flex items-center gap-4 text-gray-900 dark:text-white">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6_319)">
+<path d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z" fill="currentColor"></path>
+</g>
+<defs>
+<clippath id="clip0_6_319"><rect fill="white" height="48" width="48"></rect></clippath>
+</defs>
+</svg>
+</div>
+<h2 class="text-gray-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">Aivora Solutions</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-gray-600 dark:text-white text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-gray-600 dark:text-white text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary transition-colors" href="#">Services</a>
+<a class="text-primary text-sm font-bold leading-normal" href="#">Our Team</a>
+<a class="text-gray-600 dark:text-white text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary transition-colors" href="#">Blog</a>
+<a class="text-gray-600 dark:text-white text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary transition-colors" href="#">Contact</a>
+</div>
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 bg-gray-200 dark:bg-[#283039] text-gray-800 dark:text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
+<span class="material-symbols-outlined text-gray-800 dark:text-white" style="font-size: 20px;">dark_mode</span>
+</button>
+</div>
+<button class="md:hidden flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 bg-gray-200 dark:bg-[#283039] text-gray-800 dark:text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
+<span class="material-symbols-outlined text-gray-800 dark:text-white" style="font-size: 20px;">menu</span>
+</button>
+</header>
+<!-- PageHeading -->
+<div class="flex flex-wrap justify-center text-center gap-3 p-4 my-8">
+<div class="flex w-full flex-col gap-3">
+<p class="text-gray-900 dark:text-white text-4xl sm:text-5xl font-black leading-tight tracking-[-0.033em]">Meet the Minds Behind Aivora</p>
+<p class="text-gray-500 dark:text-[#9dabb9] text-base md:text-lg font-normal leading-normal max-w-2xl mx-auto">A dedicated group of experts turning complex AI challenges into real-world solutions.</p>
+</div>
+</div>
+<!-- Team Leader Profile -->
+<div class="flex p-4 @container my-6">
+<div class="w-full rounded-xl p-6 md:p-8 glassmorphism-light dark:glassmorphism-dark">
+<div class="flex w-full flex-col gap-6 @[520px]:flex-row @[520px]:justify-between @[520px]:items-center">
+<div class="flex flex-col items-center text-center @[520px]:flex-row @[520px]:text-left @[520px]:items-center gap-6">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full min-h-32 w-32 flex-shrink-0" data-alt="Professional headshot of Aman Ul Haq" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAooe_ZKyoG3ECB9VfpQ6DISpBddwhnIpXzd_lzA5bKwMyOrV-RtnFNUXT63SEEtsVGHCsJeJtrAhrbNw3le3l93xsP60WMxFLjNC72ophBXpYJJ3QArdcL2Vu9p5WaAMgQBR1I81BT4tFluQ8wJ7b5XaVkZqeJLrX_2CHr1_w4IMIfDyc-0n-Q9ir5Iv-sbQ0BP0SkK8FqXIi7xe9SUSXL8RfZlqrUdO1mNIJr5m6M06zzczgWecB0NsnhRoXT5z0CTfA1Hy_smB0p");'></div>
+<div class="flex flex-col justify-center">
+<p class="text-gray-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em]">Aman Ul Haq</p>
+<p class="text-primary text-base font-medium leading-normal">Team Leader | AI &amp; ML Architect</p>
+<p class="text-gray-600 dark:text-[#9dabb9] text-base font-normal leading-normal mt-2 max-w-md">
+                                            A visionary leader with a passion for building intelligent systems that solve real-world problems. Expert in AI strategy and Computer Vision.
+                                        </p>
+</div>
+</div>
+<div class="flex w-full justify-center @[480px]:w-auto gap-3">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-gray-200/50 dark:bg-[#283039] text-gray-800 dark:text-white text-sm font-bold leading-normal tracking-[0.015em] flex-1 @[480px]:flex-auto hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors">
+<span class="truncate">LinkedIn</span>
+</button>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] flex-1 @[480px]:flex-auto hover:bg-opacity-80 transition-opacity">
+<span class="truncate">GitHub</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Sub-Leader Profile -->
+<div class="flex p-4 @container my-6">
+<div class="w-full rounded-xl p-6 md:p-8 glassmorphism-light dark:glassmorphism-dark">
+<div class="flex w-full flex-col gap-4 items-center">
+<div class="flex gap-4 flex-col items-center">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full min-h-32 w-32" data-alt="Professional headshot of Jane Doe" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD4DifwnNdil5FgzbSGgSKUYDsHw9X5k4DgtjgUgV3fisuIuNZ6_UWXjJcCp0xr11YZeNHzmWB_rhwjZpX5vlbYOZNw_-dERrb5IeoJw3CytdAeRhjMrUmM0rHqRpTYgz-weIc7mQRV8HyQTaoRQ4neMwWqK835UONqVa2oVhFBwPp4DKomQW17Zv6mzVlqhU3RuWYHBlDB21EfVqlKx0AdeMCHtickuw5yGr3Mv0ls_BaA7f-gf9WjTP7hrpkcC1aUgKg95q3hzpuO");'></div>
+<div class="flex flex-col items-center justify-center">
+<p class="text-gray-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] text-center">Jane Doe</p>
+<p class="text-primary text-base font-medium leading-normal text-center">Sub-Leader | Senior Computer Vision Engineer</p>
+<p class="text-gray-600 dark:text-[#9dabb9] text-base font-normal leading-normal text-center mt-2">Specializing in high-performance computer vision models and team mentorship.</p>
+</div>
+</div>
+<div class="flex w-full max-w-sm @[480px]:max-w-[240px] gap-3 mt-2">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-gray-200/50 dark:bg-[#283039] text-gray-800 dark:text-white text-sm font-bold leading-normal tracking-[0.015em] flex-1 @[480px]:flex-auto hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors">
+<span class="truncate">LinkedIn</span>
+</button>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] flex-1 @[480px]:flex-auto hover:bg-opacity-80 transition-opacity">
+<span class="truncate">GitHub</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Developers Grid -->
+<div class="grid grid-cols-[repeat(auto-fit,minmax(160px,1fr))] gap-4 p-4 my-6">
+<div class="group relative bg-cover bg-center flex flex-col gap-3 rounded-xl justify-end p-4 aspect-[3/4] overflow-hidden glassmorphism-light dark:glassmorphism-dark transition-transform duration-300 hover:scale-105" data-alt="Professional headshot of John Smith">
+<div class="absolute inset-0 bg-cover bg-center -z-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCfGGPtwxPSyFGbREw5eVsFbvf1OyrKKjaRemqLQRrmjivI8ptEP2fSvgsSfB4ydm0xEi4bRBimHGdq_F5RemKShv4Gizy5FIST1LGoXzJBkWk3Uq4OnxPFH9bsxKt1OeRt7igLplB23RKjsV1Bseb5JO-94_bvNGwxQMCInQQDZlGwJn5LsXPH5jhWlHiNy5KKbdVkELTniKK987QdnQVGEvwpCm3Jf4q-EPzk1G35N7-NRK2eIBHiujxo3-hCHIzrCdyXPf33uzP5")'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-0"></div>
+<div class="relative z-10">
+<p class="text-white text-base font-bold leading-tight">John Smith</p>
+<p class="text-gray-300 text-sm">Machine Learning Engineer</p>
+</div>
+</div>
+<div class="group relative bg-cover bg-center flex flex-col gap-3 rounded-xl justify-end p-4 aspect-[3/4] overflow-hidden glassmorphism-light dark:glassmorphism-dark transition-transform duration-300 hover:scale-105" data-alt="Professional headshot of Emily White">
+<div class="absolute inset-0 bg-cover bg-center -z-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCfGGPtwxPSyFGbREw5eVsFbvf1OyrKKjaRemqLQRrmjivI8ptEP2fSvgsSfB4ydm0xEi4bRBimHGdq_F5RemKShv4Gizy5FIST1LGoXzJBkWk3Uq4OnxPFH9bsxKt1OeRt7igLplB23RKjsV1Bseb5JO-94_bvNGwxQMCInQQDZlGwJn5LsXPH5jhWlHiNy5KKbdVkELTniKK987QdnQVGEvwpCm3Jf4q-EPzk1G35N7-NRK2eIBHiujxo3-hCHIzrCdyXPf33uzP5")'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-0"></div>
+<div class="relative z-10">
+<p class="text-white text-base font-bold leading-tight">Emily White</p>
+<p class="text-gray-300 text-sm">AI Developer</p>
+</div>
+</div>
+<div class="group relative bg-cover bg-center flex flex-col gap-3 rounded-xl justify-end p-4 aspect-[3/4] overflow-hidden glassmorphism-light dark:glassmorphism-dark transition-transform duration-300 hover:scale-105" data-alt="Professional headshot of Michael Brown">
+<div class="absolute inset-0 bg-cover bg-center -z-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCfGGPtwxPSyFGbREw5eVsFbvf1OyrKKjaRemqLQRrmjivI8ptEP2fSvgsSfB4ydm0xEi4bRBimHGdq_F5RemKShv4Gizy5FIST1LGoXzJBkWk3Uq4OnxPFH9bsxKt1OeRt7igLplB23RKjsV1Bseb5JO-94_bvNGwxQMCInQQDZlGwJn5LsXPH5jhWlHiNy5KKbdVkELTniKK987QdnQVGEvwpCm3Jf4q-EPzk1G35N7-NRK2eIBHiujxo3-hCHIzrCdyXPf33uzP5")'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-0"></div>
+<div class="relative z-10">
+<p class="text-white text-base font-bold leading-tight">Michael Brown</p>
+<p class="text-gray-300 text-sm">Data Scientist</p>
+</div>
+</div>
+<div class="group relative bg-cover bg-center flex flex-col gap-3 rounded-xl justify-end p-4 aspect-[3/4] overflow-hidden glassmorphism-light dark:glassmorphism-dark transition-transform duration-300 hover:scale-105" data-alt="Professional headshot of Sarah Green">
+<div class="absolute inset-0 bg-cover bg-center -z-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCfGGPtwxPSyFGbREw5eVsFbvf1OyrKKjaRemqLQRrmjivI8ptEP2fSvgsSfB4ydm0xEi4bRBimHGdq_F5RemKShv4Gizy5FIST1LGoXzJBkWk3Uq4OnxPFH9bsxKt1OeRt7igLplB23RKjsV1Bseb5JO-94_bvNGwxQMCInQQDZlGwJn5LsXPH5jhWlHiNy5KKbdVkELTniKK987QdnQVGEvwpCm3Jf4q-EPzk1G35N7-NRK2eIBHiujxo3-hCHIzrCdyXPf33uzP5")'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-0"></div>
+<div class="relative z-10">
+<p class="text-white text-base font-bold leading-tight">Sarah Green</p>
+<p class="text-gray-300 text-sm">NLP Specialist</p>
+</div>
+</div>
+<div class="group relative bg-cover bg-center flex flex-col gap-3 rounded-xl justify-end p-4 aspect-[3/4] overflow-hidden glassmorphism-light dark:glassmorphism-dark transition-transform duration-300 hover:scale-105" data-alt="Professional headshot of David Black">
+<div class="absolute inset-0 bg-cover bg-center -z-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCfGGPtwxPSyFGbREw5eVsFbvf1OyrKKjaRemqLQRrmjivI8ptEP2fSvgsSfB4ydm0xEi4bRBimHGdq_F5RemKShv4Gizy5FIST1LGoXzJBkWk3Uq4OnxPFH9bsxKt1OeRt7igLplB23RKjsV1Bseb5JO-94_bvNGwxQMCInQQDZlGwJn5LsXPH5jhWlHiNy5KKbdVkELTniKK987QdnQVGEvwpCm3Jf4q-EPzk1G35N7-NRK2eIBHiujxo3-hCHIzrCdyXPf33uzP5")'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-0"></div>
+<div class="relative z-10">
+<p class="text-white text-base font-bold leading-tight">David Black</p>
+<p class="text-gray-300 text-sm">Robotics Engineer</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body></html>
